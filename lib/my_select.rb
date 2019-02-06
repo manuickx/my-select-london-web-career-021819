@@ -8,10 +8,10 @@ def my_select(collection)
   new_array.compact
 end
 
-list = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5]
 
-my_select(list) do |num|
-  if num.even?
+my_select(numbers) do |num|
+  if num%2 == 0
    num
   end
 end
