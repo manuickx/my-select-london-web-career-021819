@@ -8,3 +8,8 @@ def my_select(collection)
   new_array
 end
 
+my_select(nums) do |num|
+  if num.even?
+   num
+  end
+end
