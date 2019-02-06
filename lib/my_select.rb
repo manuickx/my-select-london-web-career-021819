@@ -5,7 +5,7 @@ def my_select(collection)
       new_array.push yield(collection[i])
       i=i+1
     end
-  new_array
+  new_array.compact
 end
 
 list = [1,2,3,4,5]
