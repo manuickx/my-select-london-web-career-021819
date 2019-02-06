@@ -2,7 +2,9 @@ def my_select(collection)
    new_array = []
     i=0
     while i<collection.length
-      new_array << yield(collection[i])
+      if (yield(collection[i]))
+        new_array << collection[i]
+      end  
       i=i+1
     end
   new_array
@@ -12,6 +14,4 @@ numbers = [1, 2, 3, 4, 5, 6]
 
 my_select(numbers) do |num|
   if num.even?
-   num
-  end
 end
