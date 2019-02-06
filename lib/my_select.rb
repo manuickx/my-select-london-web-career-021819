@@ -12,6 +12,5 @@ numbers = [1, 2, 3, 4, 5]
 
 my_select(numbers) do |num|
   if num%2 == 0
-   "#{num}"
   end
 end
