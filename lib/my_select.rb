@@ -5,13 +5,13 @@ def my_select(collection)
       new_array.push yield(collection[i])
       i=i+1
     end
-  new_array.compact
+  new_array
 end
 
 numbers = [1, 2, 3, 4, 5]
 
 my_select(numbers) do |num|
   if num%2 == 0
-   num
+   "#{num}"
   end
 end
