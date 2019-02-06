@@ -10,8 +10,8 @@ def my_select(collection)
   new_array
 end
 
-numbers = [1, 2, 3, 4, 5, 6]
 
-my_select(numbers) do |num|
+
+my_select([]) do |num|
   num.even?
 end
