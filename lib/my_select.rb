@@ -8,7 +8,7 @@ def my_select(collection)
   new_array.compact
 end
 
-list = [1,2,3,4,5]
+list = [1, 2, 3, 4, 5]
 
 my_select(list) do |num|
   if num.even?
