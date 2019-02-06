@@ -8,9 +8,9 @@ def my_select(collection)
   new_array
 end
 
-nums = [1,2,3,4,5]
+list = [1,2,3,4,5]
 
-my_select(nums) do |num|
+my_select(list) do |num|
   if num.even?
    num
   end
